@@ -6,29 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import videoPlay from "../assets/videoPlay.png";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-  },
-  details: {
-    display: "flex",
-    flexDirection: "column",
-  },
-  content: {
-    flex: "1 0 auto",
-  },
-  cover: {
-    width: 151,
-  },
-  controls: {
-    display: "flex",
-    alignItems: "center",
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  },
-}));
-
-export default function PlayVideo() {
+const PlayVideo = () => {
   const classes = useStyles();
   const theme = useTheme();
 
@@ -53,4 +31,33 @@ export default function PlayVideo() {
       </div>
     </Card>
   );
-}
+};
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    boxShadow: "none",
+    border: "none",
+    borderRadius: 0,
+    margin: "40px 0",
+  },
+  details: {
+    display: "flex",
+    flexDirection: "column",
+    backgroundColor: "#EEEEEE",
+  },
+  content: {
+    flex: "1 0 auto",
+  },
+  cover: {
+    width: "100%",
+  },
+  controls: {
+    display: "flex",
+    alignItems: "center",
+    paddingLeft: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+  },
+}));
+
+export default PlayVideo;

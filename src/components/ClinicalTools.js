@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import {
   Container,
   Typography,
-  Button,
   CardContent,
   CardMedia,
   CardActions,
