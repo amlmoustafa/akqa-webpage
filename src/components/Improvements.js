@@ -75,7 +75,7 @@ const Improvements = () => {
 };
 
 const useStyles = makeStyles(() => ({
-  improvementsContainer: { position: "relative", borderBottom: "1px solid" },
+  improvementsContainer: { position: "relative"},
   improvementsContentContainer: {
     position: "absolute",
     maxWidth: "fit-content",
